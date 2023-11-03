@@ -1,0 +1,145 @@
+footer{
+    padding: 70px 0;
+    background-color: #000000;
+    color: #fefefe;
+}
+footer .container2{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container2 .footer-top{
+    border-bottom: 3px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 35px ;
+    flex: 1 0 0%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer-top .footer-logo{
+    padding: 0 15px 25px;
+    flex: 1 0 0%;
+}
+.footer-logo > img{
+    vertical-align: middle;
+    width: 450px;
+}
+.footer-top .footer-list{
+    padding: 0 15px 25px;
+    color: lightgray;
+    flex: 0 0 auto;
+    width: 16.66666667%;
+    max-width: 100%;
+}
+.footer-list .footer-title{
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: 700 ;
+}
+.footer-top .footer-list > li{
+    color: lightgray;
+    margin-top: 10px;
+}
+
+
+.container2 .footer-bottom{
+    padding-top: 25px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .footer-bottom-left{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: lightgray;
+    max-width: 100%;    
+}
+.footer-bottom-left .sameClassSpan{
+    padding: 0 10px ;
+}
+.footer-bottom-left .footer-augmntx{
+    padding: 0 10px;
+}
+
+.footer-bottom-left > a{
+    color: #5271FF;
+    margin-left: 6px;
+}
+
+
+.footer-bottom-right > span{
+    padding: 0 16px;
+}
+.footer-bottom-right > span a{
+    color: lightgray;
+}
+
+
+@media (max-width: 1400px) {
+    footer .container2{
+        max-width: 1320px ;
+    }
+}
+ 
+@media (max-width: 1200px) {
+    footer .container2{
+        max-width: 1140px ;
+    }
+    
+}
+@media (max-width: 992px ) {
+    footer .container2{
+        max-width: 960px ;
+    }
+    .container2 .footer-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top .footer-list{
+        padding-top: 20px;
+    }
+    .footer-top .footer-list .footer-title{
+        font-size: 25px;
+        padding: 5px 0;
+    }
+    .footer-top .footer-list  li{
+        padding: 6px 0;
+    }
+}
+@media (max-width:768px ) {
+    footer .container2{
+        max-width: 720px ;
+    }
+    .container2 .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer-bottom .footer-bottom-left{
+        flex-direction: column;
+    }
+    .footer-bottom .footer-bottom-right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+@media (max-width: 576px) {
+    footer .container2{
+        max-width:  540px ;
+    }
+    .footer-logo > img{
+        width: 250px;
+        
+    }
+    .footer-top .footer-list{
+        width: 50%;
+    }
+    
+}

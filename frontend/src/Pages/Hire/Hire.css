@@ -1,0 +1,195 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+.containers-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3fafe
+}
+.containers-cont .hirecontainer{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+} 
+
+.hireSection .hireSection-about{
+    padding: 10px 30px;
+    margin: 5px -15px 0;
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+}
+
+.hireSection-about > h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-family: "DM Serif Display";
+    font-weight: 400 ;
+    word-spacing: normal ;
+    letter-spacing: normal ;
+    text-align: center;
+    color: #343f52
+
+}
+.hireSection-about > p{
+    line-height: 1.65;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #60697b;
+    max-width: 700px;
+}
+.hireSection-about > p:nth-of-type(1){
+    margin-top:20px;
+}
+.hireSection-about > p:nth-of-type(2){
+    margin-bottom:20px;
+    padding-bottom: 10px;
+}
+.hireSection-about .hireSection-about-form{
+    color: #60697b;
+    display: flex;
+    flex-direction: column;
+}
+.hireSection-about-form .hireSection-about-formInputs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 90px;
+}
+
+.hireSection-about-formInputs .hireSection-about-formInputs-input{
+    width: 50%;
+
+    margin-bottom: 20px;
+    padding: 0 10px;
+    
+    position: relative;
+}
+
+.hireSection-about-formInputs-input > input{
+    padding: 12px 20px;
+    height: 52px;
+    line-height: 1.25;
+    display: block;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #60697b;
+    background-color: #fefefe;
+    background-clip: padding-box;
+    border: 1px solid rgba(8, 60, 130, 0.07);
+    border-radius: 0.4rem;
+    box-shadow: 0 0 25px rgba(30, 34, 40, 0.04);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.hireSection-about-formInputs .error-message-in-hire{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 1px;
+  left: 2px; 
+  transform: translateY(5px); 
+  width: 100%; 
+  text-align: left;
+  z-index: 33;
+
+}
+.hire-Inputs-Error-MessageDIV{
+    position: relative;
+    padding: 5px 20px;
+    line-height: 1.25;
+}
+.hireSection-about-formInputs-input select {
+    padding: 12px 20px;
+    height: 52px;
+    line-height: 1.25;
+
+    display: block;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #60697b;
+    background-color: #fefefe;
+    background-clip: padding-box;
+    border: 1px solid rgba(8, 60, 130, 0.07);
+    border-radius: 0.4rem;
+    box-shadow: 0 0 25px rgba(30, 34, 40, 0.04);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.hireSection-about-form .hireSection-about-formSubmit{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 100%;
+    margin-top: 25px
+}
+.hireSection-about-formSubmit > div > input{
+    border-color: #5271FF;
+    background-color: #5271FF;
+    color: #fff;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateY(0);
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 1000px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.hireSection-about-formSubmit > span{
+    color: #aab0bc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+@media (max-width:768px ) {
+    .hireSection-about .hireSection-about-form {
+        width: 100%;
+    }
+    .hireSection-about-form .hireSection-about-formInputs{
+        flex-direction: column;
+        padding-left: 135px
+    }
+    .hireSection-about-formInputs .hireSection-about-formInputs-input{
+        width:100%
+    }
+}
+
+@media (max-width:576px){
+    .hireSection-about-form .hireSection-about-formInputs{
+        padding-left: 60px
+    }
+}

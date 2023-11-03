@@ -1,0 +1,95 @@
+/* colors 
+
+dark #262b32
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+.leftSideNav {
+    width: 300px;
+    min-height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #262b32;
+    color: #FFFFFF;
+    z-index: 999;
+}
+
+.leftSideNav .mini-container {
+    padding: 30px;
+    flex-direction: column;
+    
+}
+
+.leftSideNav .leftSideNav-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.leftSideNav .leftSideNav-top > p:nth-of-type(1) {
+    font-size: 28.35px;
+    padding-right: 15px;
+}
+
+.leftSideNav .leftSideNav-top > p:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28.35px;
+    color: #ffffffd1;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border: 1px solid #ffffff6f
+}
+
+.leftSideNav .mini-container > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.leftSideNav .mini-container > ul li{
+    margin: 0 0 10px;
+    padding: 6px 0;
+    cursor: pointer;
+    color: #FFFFFF ;
+}
+.leftSideNav .mini-container > ul .dropDown-li{
+     cursor: pointer;
+}
+.leftSideNav .mini-container > ul .dropDown-li span:nth-of-type(1){
+    padding-right: 65px;
+}
+.leftSideNav .dropDown-li .dropDown-li-list{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 10px;
+}
+.leftSideNav .dropDown-li .dropDown-li-list{
+    margin: 10px;
+}
+
+.socialPages{
+    font-size: 20px;
+    padding: 0 14px 0 0;
+}
+
+.leftSideNav .showDropDown{
+    display: flex !important;
+}
+
+.displayNone{
+    display: none;
+}

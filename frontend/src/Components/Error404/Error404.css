@@ -1,0 +1,43 @@
+/* Error404.css */
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: blue; /* Background color */
+    animation: fadeIn 1s ease; /* Add a fade-in animation */
+  }
+  
+  .error-text {
+    color: white; /* Text color */
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Background color for the text area */
+    transition: background-color 0.3s ease; /* Add a color transition */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Border style for the spinner */
+    border-top: 4px solid white; /* Top border for the spinner (white) */
+    border-radius: 50%; /* Create a circle */
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite; /* Apply the spin animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Initial rotation angle */
+    100% { transform: rotate(360deg); } /* Final rotation angle (360 degrees for a full circle) */
+  }
