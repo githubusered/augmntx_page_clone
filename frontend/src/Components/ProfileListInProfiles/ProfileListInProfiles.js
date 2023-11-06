@@ -23,11 +23,11 @@
             {profilesToDisplay.map((profile) => (
             <div key={profile.unique_id} className='profile' >
                             <a 
-                             href={`http://localhost:3000/profile/${profile.profile_url}/${profile.unique_id}`}
+                             href={`/profile/${profile.profile_url}/${profile.unique_id}`}
                              className='profile-topRow'
                              onClick={(e)=>{
                                 e.preventDefault();
-                                window.location.href=`http://localhost:3000/profile/${profile.profile_url}/${profile.unique_id}`
+                                window.location.href=`/profile/${profile.profile_url}/${profile.unique_id}`
                              }}>
                              
                                 <div className='cardIconAndTitle'>
@@ -66,8 +66,8 @@
                             </a>
                             <div className='profile-bottomRow'>
                                 <ul className='bottomRow-list'>
-                                    <li><a href="https://localhost:3000/hire"> <FontAwesomeIcon icon={faComment} />Hire {profile.last_name} {profile.first_name} </a></li>
-                                    <li><a href={`https://localhost:3000/profile/${profile.profile_url}/${profile.unique_id}`} onClick={()=>{DownloadPDF(profile)}} > <FontAwesomeIcon icon={faDownload} /> Download PDF</a></li>
+                                    <li><a href="/hire"> <FontAwesomeIcon icon={faComment} />Hire {profile.last_name} {profile.first_name} </a></li>
+                                    <li><a href={`/profile/${profile.profile_url}/${profile.unique_id}`} onClick={()=>{DownloadPDF(profile)}} > <FontAwesomeIcon icon={faDownload} /> Download PDF</a></li>
                                 </ul>
                             </div>
             </div>

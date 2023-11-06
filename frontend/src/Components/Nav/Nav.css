@@ -50,11 +50,19 @@ ul,ol{
 
 .nav-container .container  > ul > a:hover{
     color: #5271FF;
+    
 }
 
 ul .nav-dropdown-list-li{
     position: relative;
-    
+
+    padding: 24px 20px;
+    font-weight: 600;
+    color: #343f52;
+    cursor: pointer;
+}
+ul .nav-dropdown-list-li:hover{
+    color: #5271FF;    
 }
 ul a:hover{
     color: #5271FF;

@@ -28,9 +28,9 @@ const Profile = () => {
 {profile ? (<div className="profile-container">
         <div className="profileSection-backPath">
           <FontAwesomeIcon icon={faArrowLeft} />
-          <a href="http://localhost:3000/" className='profileSection-backPath-links'>Home</a>
+          <a href="/" className='profileSection-backPath-links'>Home</a>
            / 
-          <a href="http://localhost:3000/profiles" className='profileSection-backPath-links'>Developers</a>
+          <a href="/profiles" className='profileSection-backPath-links'>Developers</a>
            / 
           <span className='profileSection-backPath-profileId'>{profile.profile_info.unique_id}</span>
         </div>
@@ -54,7 +54,7 @@ const Profile = () => {
         </div>
         <div className="profileSection-profileSkills">
           { profile.skills.map((skill)=>(
-            <div className="skill-pill" key={skill.id}><a href={`http://localhost:3000/skills/${skill.name}`}>{skill.name}</a></div>
+            <div className="skill-pill" key={skill.id}><a href={`/skills/${skill.name}`}>{skill.name}</a></div>
           ))}
         </div>
         <div className="profileSection-industries">
@@ -71,11 +71,11 @@ const Profile = () => {
               </a>
             </div>
             <div >
-              <a href="http://localhost:3000/hire">
+              <a href="/hire">
               <FontAwesomeIcon icon={faComment} />
                  Hire {profile.profile_info.last_name} {profile.profile_info.first_name} </a></div>
             <div >
-              <a href={`http://localhost:3000/profile/${profile.profile_info.profile_url}/${profile.profile_info.unique_id}`} onClick={()=>{DownloadPDF(profile)}}>
+              <a href={`/profile/${profile.profile_info.profile_url}/${profile.profile_info.unique_id}`} onClick={()=>{DownloadPDF(profile)}}>
               <FontAwesomeIcon icon={faDownload} />
                  Download PDF </a></div>
         </div>
@@ -182,11 +182,11 @@ const Profile = () => {
               </a>
             </div>
             <div >
-              <a href="http://localhost:3000/hire">
+              <a href="/hire">
               <FontAwesomeIcon icon={faComment} />
                  Hire {profile.profile_info.last_name} {profile.profile_info.first_name} </a></div>
             <div >
-              <a href={`http://localhost:3000/profile/${profile.profile_info.profile_url}/${profile.profile_info.unique_id}`} onClick={()=>{DownloadPDF(profile)}}>
+              <a href={`/profile/${profile.profile_info.profile_url}/${profile.profile_info.unique_id}`} onClick={()=>{DownloadPDF(profile)}}>
               <FontAwesomeIcon icon={faDownload} />
                  Download PDF </a></div>
         </div>
@@ -196,14 +196,14 @@ const Profile = () => {
               <span>Hire software </span>
               developers today
             </div>
-            <a href="https://augmntx.com/hire" className='profileSection-hireJoin-hire-btn'>Connect with us</a>
+            <a href="/hire" className='profileSection-hireJoin-hire-btn'>Connect with us</a>
           </div>
           <div className="profileSection-hireJoin-join">
             <div className='profileSection-hireJoin-hire-text'>
               <span>Join the  </span>
               developer network
             </div>
-            <a href="https://augmntx.com/hire" className='profileSection-hireJoin-hire-btn'>Join AugmntX</a>
+            <a href="/join" className='profileSection-hireJoin-hire-btn'>Join AugmntX</a>
           </div>
         </div>
     </div>) : (<Loading />)

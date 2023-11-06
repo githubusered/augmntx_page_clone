@@ -44,7 +44,7 @@ useEffect(()=>{
           <div className='nav-logo'><img src={logo} alt="augmntx LOGO" /></div>
           <ul>
             <a href='/profiles'>Why</a>
-            <a  className='nav-dropdown-list-li' onClick={toggleDropDown}>Industries
+            <li  className='nav-dropdown-list-li' onClick={toggleDropDown}>Industries
             <FontAwesomeIcon style={{fontSize:'12px',padding:'2px',color:'#5271FF'}} icon={faChevronDown} />
               {isDropDownVisible && (<ul className={`nav-dropdown-list  ${isDropDownVisible ? 'opened' : ''}`}>
                 <a href='/profiles'>Travel</a>
@@ -55,7 +55,7 @@ useEffect(()=>{
                 <a href='/profiles'>Digital Commerce</a>
                 <a href='/profiles'>View all</a>
               </ul>)}
-            </a>
+            </li>
             <a href='/profiles'>Find Dev</a> 
             <a href='/join'>Apply as Vendor</a>
             <a href='/hire' className='nav-navbar-hire'>Hire Dev</a>
