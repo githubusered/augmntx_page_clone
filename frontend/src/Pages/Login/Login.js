@@ -104,16 +104,16 @@ const Login = () => {
                     </li>
                 </ul>
             </form>
-            <a href="http://localhost:3000/forgot-password">
+            <a href="/forgot-password">
                 <div className="loginSection-contForgotPassword">Forgot password?</div>
             </a>
         </div>
         <div className="loginSection-signUp"> Don't have an account? 
-            <a href="http://localhost:3000/join">Sign up</a>
+            <a href="/join">Sign up</a>
         </div>
         <div className="loginSection-contactUs">
         Please 
-        <a href="http://localhost:3000/contact-us">Contact us</a>
+        <a href="/contact-us">Contact us</a>
         if you require any assistance 
         </div>
       </section>
